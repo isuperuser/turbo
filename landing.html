@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+    comments for class names:
+    Layout module: l-*; Component: c-*; States: is-*; JavaScript hooks: js-*; Helpers: h-*
+-->
+<!--[if IE]><html class="is-ie"><![endif]-->
+<html lang="ru" class="is-no-js is-no-main-footer is-has-preloader">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">     
+    <title>Турбо.Магазин</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+    <script>document.documentElement.className = document.documentElement.className.replace(/\bis-no-js\b/g, '') + ' is-js '</script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos2.2.0.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+<div class="l-all">
+    <main class="l-main-content l-main-content--large" role="main">
+        <section class="l-main-content__section c-brand-bg" id="videoBgSection">
+            <div class="l-centering-content">
+                <a href="#" class="c-logo" role="banner" title="Турбо.Магазин" data-aos="fade-down" data-aos-delay="250">
+                    <div class="c-logo__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75"><path fill="#FFF" fill-rule="evenodd" d="M37.5 75C16.79 75 0 58.21 0 37.5S16.79 0 37.5 0 75 16.79 75 37.5 58.21 75 37.5 75zM48 42c-1.5 4.5-2.5 7.25-3 8.25 0 1.5 1 3.5 3 6 2.5-1.5 3.75-3.5 3.75-6S50.5 45 48 42zm-16.2 7.5V54c0 1.5.5 3 1.5 4.5l1.5-3 3 7.5 3-7.5 1.5 3c1-2 1.5-3.5 1.5-4.5v-4.5c-1.844 1-3.844 1.5-6 1.5s-4.156-.5-6-1.5zM27.375 42C25.125 45 24 47.75 24 50.25s1.25 4.5 3.75 6c2-2.5 3-4.5 3-6-.5-1-1.625-3.75-3.375-8.25zm3.792 6H44.5c1.333-3.693 2-8.693 2-15s-3.111-12.807-9.333-19.5C31.389 19.774 28.5 26.274 28.5 33c0 6.726.889 11.726 2.667 15zM37.5 34.5a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0 9a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></path></svg></div>
+                    <span class="c-logo__name">Турбо.Магазин</span>
+                </a><!--end c-logo -->
+                <h1 data-aos="fade-down" data-aos-delay="500">Сделайте вашу группу ВК удобным магазином для СП</h1>
+                <div id="bgVideoControls" data-aos="fade-down" data-aos-delay="750">
+                  <span id="bgPlay" class="c-play-ico"></span>
+                  <span id="bgPause" class="c-pause-ico"></span>
+                </div>
+                <div class="c-buttons-area" data-aos="fade-down" data-aos-delay="750">
+                    <a href="#" class="c-button" title="Попробовать бесплатно">Попробовать бесплатно</a>
+                    <a href="#" class="c-button c-button--underline" title="Демо-магазин">Демо-магазин</a>
+                </div>
+            </div><!--end l-centering-content -->
+            <video id="backgroundVideo" loop muted><!--source into scripts.js; possible add here if need--></video>
+            <div id="bgVideoCover" style="background-image: url(https://cdn.jsdelivr.net/npm/bideo.js@1.0.0/video_cover.jpeg)"></div>
+            <div id="mouse" class="c-mouse" data-aos="fade"><div class="c-mouse__ico"><svg width="2.125em" height="5em" viewBox="0 0 34 80" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" opacity="1.00" d=" M 12.30 1.32 C 17.76 0.27 23.92 0.87 28.03 5.01 C 32.95 9.16 33.41 15.98 33.00 21.95 C 32.50 28.94 34.73 37.04 29.84 42.94 C 23.97 51.31 10.11 51.20 4.14 42.99 C -0.25 37.62 1.24 30.34 1.00 23.96 C 1.20 19.16 0.24 13.98 2.54 9.53 C 4.48 5.58 8.18 2.73 12.30 1.32 M 6.26 8.38 C 3.07 12.51 2.76 17.99 3.00 23.00 C 7.42 22.99 11.83 23.03 16.25 22.98 C 16.15 21.00 14.17 20.21 12.98 18.93 C 13.00 16.29 13.02 13.65 12.96 11.01 C 13.95 10.18 14.95 9.37 15.99 8.60 C 16.00 6.77 16.00 4.93 16.00 3.09 C 12.37 3.95 8.61 5.30 6.26 8.38 M 17.98 3.12 C 17.99 4.95 18.00 6.78 18.01 8.61 C 19.05 9.37 20.06 10.18 21.05 11.01 C 20.98 13.65 21.00 16.29 21.02 18.93 C 19.82 20.21 17.85 21.00 17.75 22.98 C 22.17 23.03 26.58 22.99 31.00 23.00 C 31.27 17.98 30.95 12.55 27.73 8.43 C 25.50 5.18 21.61 4.00 17.98 3.12 M 14.95 13.06 C 14.87 15.48 14.63 18.25 17.40 19.15 C 17.81 18.59 18.62 17.46 19.02 16.90 C 19.00 15.39 18.97 13.89 18.91 12.39 C 18.36 12.01 17.27 11.25 16.72 10.87 C 16.13 11.60 15.54 12.33 14.95 13.06 M 3.01 25.00 C 2.86 30.63 2.55 36.86 6.25 41.56 C 10.75 47.44 19.88 48.50 25.58 43.73 C 31.32 39.40 31.25 31.49 30.99 25.00 C 21.66 25.00 12.34 25.00 3.01 25.00 Z"></path></svg></div><svg class="c-mouse__arrow" width="2.8125em" height="1.4375em" viewBox="0 0 45 23" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" opacity="1.00" d=" M 2.06 4.00 C 0.94 3.22 1.48 1.73 1.78 0.70 C 8.70 6.75 15.77 12.62 22.68 18.67 C 30.05 13.00 36.69 6.46 44.03 0.76 C 44.00 1.48 43.94 2.93 43.91 3.65 C 36.93 9.80 29.91 15.93 22.70 21.81 C 15.92 15.75 8.85 10.04 2.06 4.00 Z"></path></svg></div>      
+        </section><!--end l-main-content__section -->
+        <section class="l-main-content__section">
+            <div class="l-centering-content">
+                <div class="l-columns-content l-columns-content--section-column">
+                    <div class="l-columns-content__item" data-aos="fade">
+                        <h1>Увеличивайте продажи в вашей группе СП</h1>
+                        <div class="c-column__content">
+                            <p>Заказы в Турбо.Магазине для групп СП удобны как в интернет-магазине. Всю информацию о заказе клиент видит в личном кабинете. Легкие покупки - больше заказов!</p>
+                        </div>
+                        <div class="c-buttons-area">
+                            <a href="#" class="c-button hvr-rectangle-in" title="Попробовать бесплатно">Попробовать бесплатно</a>
+                            <a href="#" class="c-button c-button--underline" title="Демо-магазин">Демо-магазин</a>
+                        </div>
+                    </div><!--end l-columns-content__item -->
+                    <div class="l-columns-content__item">
+                        <div class="c-demo-img">
+                            <div class="c-demo-img__item" data-aos="fade-left" style="background-image: url(upload/bg-im-1.jpg);"></div>
+                            <div class="c-demo-img__item" data-aos="fade-left" style="background-image: url(upload/bg-im-0.jpg);"></div>
+                        </div>
+                    </div><!--end l-columns-content__item -->
+                </div><!--end l-columns-content -->
+            </div><!--end l-centering-content -->
+        </section><!--end l-main-content__section -->
+        <section class="l-main-content__section">
+            <div class="l-centering-content">
+                <h1 data-aos="fade">Управляйте закупками легко и удобно</h1>
+                <div class="l-columns-content l-columns-content--section-column l-demo-video">
+                    <div class="l-columns-content__item" data-aos="fade">
+                        <div class="c-demo-video" id="cDemoVideo"><!--playlist get from #cDemoVideoPlayerPlaylist .c-demo-video__track ... code into scripts.js--></div>
+                        <div class="c-buttons-area h-mobile-hidden">
+                            <a href="#" class="c-button" title="Попробовать бесплатно">Попробовать бесплатно</a>
+                            <a href="#" class="c-button c-button--underline" title="Демо-магазин">Демо-магазин</a>
+                        </div>
+                    </div><!--end l-columns-content__item -->
+                    <div class="l-columns-content__item">
+                        <ol class="c-two-columns-list c-circle-decor-list" id="cDemoVideoPlayerPlaylist">
+                            <li class="c-two-columns-list__item  c-circle-decor-list__item" data-aos="zoom-in">
+                                <div class="c-circle-decor-list__content-wrap"  target="_blank">
+                                    <div class="c-circle-decor-list__item-name">Сбор заказов</div>
+                                    <div class="c-circle-decor-list__text">Заказы из Турбо.Магазина и комментариев к альбомам приходят в систему</div>
+                                </div>
+                                <a href="https://www.youtube.com/watch?v=t99KH0TR-J4" class="c-demo-video__track" target="_blank">Посмотреть видео</a>
+                            </li>
+                            <li class="c-two-columns-list__item  c-circle-decor-list__item" data-aos="zoom-in">
+                                <div class="c-circle-decor-list__content-wrap"  target="_blank">
+                                    <div class="c-circle-decor-list__item-name">Выставление счетов</div>
+                                    <div class="c-circle-decor-list__text">Выставляйте счета в 1 клик через ВК, по СМС или email</div>
+                                </div>
+                                <a href="https://www.youtube.com/watch?v=9jK-NcRmVcw" class="c-demo-video__track" target="_blank">Посмотреть видео</a>
+                            </li>
+                            <li class="c-two-columns-list__item  c-circle-decor-list__item" data-aos="zoom-in">
+                                <div class="c-circle-decor-list__content-wrap"  target="_blank">
+                                    <div class="c-circle-decor-list__item-name">Контроль оплат</div>
+                                    <div class="c-circle-decor-list__text">Отмечайте оплаты от клиентов и оповещайте должников в 1 клик</div>
+                                </div>
+                                <a href="https://www.youtube.com/watch?v=ylpNEb31k4U" class="c-demo-video__track" target="_blank">Посмотреть видео</a>
+                            </li>
+                            <li class="c-two-columns-list__item  c-circle-decor-list__item" data-aos="zoom-in">
+                                <div class="c-circle-decor-list__content-wrap"  target="_blank">
+                                    <div class="c-circle-decor-list__item-name">Расчет доставки ТК</div>
+                                    <div class="c-circle-decor-list__text">Рассчитайте доставку нужным вам способом в 1 клик</div>
+                                </div>
+                                <a href="https://www.youtube.com/watch?v=--Wokwe4-i0" class="c-demo-video__track" target="_blank">Посмотреть видео</a>
+                            </li>
+                            <li class="c-two-columns-list__item  c-circle-decor-list__item" data-aos="zoom-in">
+                                <div class="c-circle-decor-list__content-wrap"  target="_blank">
+                                    <div class="c-circle-decor-list__item-name">Раздача товара</div>
+                                    <div class="c-circle-decor-list__text">Распечатайте готовые наклейки и ведомость для выдачи в 1 клик</div>
+                                </div>
+                                <a href="https://www.youtube.com/watch?v=rSlFiugBtzo" class="c-demo-video__track" target="_blank">Посмотреть видео</a>
+                            </li>
+                        </ol>
+                    </div><!--end l-columns-content__item -->
+                    <div class="c-buttons-area h-mobile-visible">
+                        <a href="#" class="c-button" title="Попробовать бесплатно">Попробовать бесплатно</a>
+                        <a href="#" class="c-button c-button--underline" title="Демо-магазин">Демо-магазин</a>
+                    </div>
+                </div><!--end l-columns-content -->
+            </div><!--end l-centering-content -->
+        </section><!--end l-main-content__section -->
+        <section class="l-main-content__section">
+            <div class="l-centering-content">
+                <div class="l-columns-content l-columns-content--section-column">
+                    <div class="l-columns-content__item" data-aos="fade">
+                        <h1>Откройте Турбо.Магазин бесплатно и в несколько кликов</h1>
+                        <div class="c-column__content">
+                            <ol>
+                                <li><a href="#" title="Установить приложение">Установите приложение</a> в группу ВК</li>
+                                <li><a href="#" title="Создать закупку">Создайте закупку</a> и укажите фотоальбомы</li>
+                                <li>Собирайте больше заказов от довольных покупателей!</li>
+                            </ol>
+                        </div>
+                        <div class="c-buttons-area">
+                            <a href="#" class="c-button" title="Попробовать бесплатно">Попробовать бесплатно</a>
+                            <a href="#" class="c-button c-button--underline" title="Демо-магазин">Демо-магазин</a>
+                        </div>
+                    </div><!--end l-columns-content__item -->
+                    <div class="l-columns-content__item">
+                        <div class="c-demo-img c-demo-img--lot">
+                            <div class="c-demo-img__item" data-aos="fade-left" style="background-image: url(upload/group-14-.jpg);"></div>
+                            <div class="c-demo-img__item" data-aos="fade-left" style="background-image: url(upload/group-15.jpg);"></div>
+                            <div class="c-demo-img__item" data-aos="fade-left" style="background-image: url(upload/group-16.jpg);"></div>
+                            <div class="c-demo-img__item" data-aos="fade-left" style="background-image: url(upload/group-19.jpg);"></div>
+                            <div class="c-demo-img__item" data-aos="fade-left" style="background-image: url(upload/group-18.jpg);"></div>
+                        </div>
+                    </div><!--end l-columns-content__item -->
+                </div><!--end l-columns-content -->
+            </div><!--end l-centering-content -->
+        </section><!--end l-main-content__section -->
+        <section class="l-main-content__section c-brand-bg l-main-content__section--banner-section" style="background-image: url(upload/bg-im.jpg);">
+            <div class="l-centering-content" data-aos="fade">
+                <h1>Остались вопросы? Не можете разобраться?</h1>
+                <div class="l-main-content__section-content">
+                    <p>Мы сделали для Вас <a href="#" title="Инструкция по работе с Турбо.Магазином">понятную инструкцию</a> по работе с Турбо.Магазином<br>
+Не нашли ответа на свой вопрос? <a href="#" title="Написать в техподдержку">Напишите в техподдержку</a></p>
+                </div>
+            </div><!--end l-centering-content -->
+        </section><!--end l-main-content__section -->
+    </main><!--end l-main-content -->
+</div><!--end l-all -->
+<svg class="h-invisible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.125em" height="1.125em" viewBox="0 0 18 18">
+    <defs>
+        <path id="searchIco" d="M12.516 11.016l4.968 4.968-1.5 1.5-4.968-4.968v-.797l-.282-.281c-1.218 1.03-2.625 1.546-4.218 1.546-1.813 0-3.352-.632-4.618-1.898C.633 9.82 0 8.289 0 6.492c0-1.797.633-3.328 1.898-4.594C3.164.633 4.695 0 6.492 0 8.29 0 9.82.633 11.086 1.898c1.266 1.266 1.898 2.805 1.898 4.618 0 1.593-.515 3-1.546 4.218l.28.282h.798zm-6 0c1.25 0 2.312-.438 3.187-1.313s1.313-1.937 1.313-3.187c0-1.25-.438-2.313-1.313-3.188S7.766 2.016 6.516 2.016c-1.25 0-2.313.437-3.188 1.312S2.016 5.266 2.016 6.516c0 1.25.437 2.312 1.312 3.187s1.938 1.313 3.188 1.313z"></path>
+        <mask id="searchMask" fill="#fff"><use xlink:href="#searchIco"></use></mask>
+        <path id="breadcrumbIco" d="M0 4.656V3.344h9.438L7.062.938 8 0l4 4-4 4-.938-.938 2.375-2.406z"></path>
+        <mask id="breadcrumbMask" fill="#fff">
+            <use xlink:href="#breadcrumbIco"></use>
+        </mask>
+        <path id="carouselArrowIco" d="M.938 0l4 4-4 4L0 7.062 3.063 4 0 .937z"></path>
+        <mask id="CarouselArrowMask" fill="#fff">
+            <use xlink:href="#carouselArrowLeftIco"></use>
+        </mask>
+        <path id="menuArrowIco" d="M7.063 0L8 .938l-4 4-4-4L.938 0 4 3.063z"></path>
+        <mask id="menuArrowMask" fill="#fff">
+            <use xlink:href="#menuArrowIco"></use>
+        </mask>
+    </defs>
+</svg>
+<script src="js/aos2.2.0.min.js"></script>
+<script src="js/bideo.min.js"></script>
+<script src="js/scripts.js"></script>
+<!-- __________________________________ THE END. ALL THE BEST! ______________________________ --> 
+
+</body>
+</html>
